@@ -945,5 +945,52 @@ Skills Section Styles
 
 
    
+/* Consolidated Media Queries */
+@media screen and (max-width: 768px) {
+  .about-containers {
+      flex-direction: column;
+      text-align: center;
+  }
 
+  .details-container {
+      margin: 10px;
+  }
+
+  /* Additional styles from other instances */
+  .project-description-container {
+      max-height: 120px;
+  }
+  
+  .project-description {
+      font-size: 0.85rem;
+  }
+
+  /* Profile section adjustments */
+  #profile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 1rem;
+  }
+
+  /* Other styles... */
+}
+
+@media screen and (max-width: 480px) {
+  .contact-info-container {
+      grid-template-columns: 1fr;
+  }
+
+  .details-container {
+      width: 95%;
+      padding: 1rem;
+  }
+
+  /* Additional styles from other instances */
+  .project-img {
+      height: 160px;
+  }
+
+  /* Other styles... */
+}
 
