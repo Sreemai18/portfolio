@@ -1,0 +1,197 @@
+/* Add these media queries to your style.css file */
+
+/* Tablet and smaller desktops */
+@media screen and (max-width: 1024px) {
+    /* Navigation */
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: white;
+        z-index: 1000;
+    }
+
+    /* Profile Section */
+    #profile {
+        height: auto;
+        padding-top: 100px;
+        margin: 0 2rem;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .profile-pic-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile-content {
+        text-align: center;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    /* Skills Section */
+    #skills {
+        margin: 0 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .skill-card {
+        padding: 1rem;
+    }
+
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Projects Section */
+    #projects {
+        margin: 0 1rem;
+    }
+
+    .about-containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-container {
+        width: 100%;
+        max-width: none;
+        margin: 1rem 0;
+    }
+
+    /* Contact Section */
+    .contact-info-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1rem;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+    /* Navigation */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* Profile Section */
+    .profile-pic-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .bio {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Skills Section */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    /* Projects Section */
+    .project-img {
+        height: 200px;
+    }
+
+    .project-description-container {
+        max-height: none;
+    }
+
+    /* Contact Section */
+    .contact-info-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    /* Navigation */
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    /* Profile Section */
+    .profile-pic-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .name {
+        font-size: 1.75rem;
+    }
+
+    /* Skills Section */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .skill-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Projects Section */
+    .project-img {
+        height: 160px;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    /* Contact Section */
+    .contact-card {
+        padding: 1rem;
+    }
+
+    .contact-icon-box {
+        width: 45px;
+        height: 45px;
+    }
+
+    .contact-icon-box i {
+        font-size: 20px;
+    }
+}
