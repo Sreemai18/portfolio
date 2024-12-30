@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Sreemai Annam</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hamburger Navigation for Mobile -->
+    <nav id="hamburger-nav">
+        <div class="logo">Sreemai Annam</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+      <div class="profile-container">
+          <div class="profile-pic-container">
+              <img src="./assets/profile-pic.jpg" alt="Sreemai Annam" class="profile-pic">
+          </div>
+          <div class="profile-content">
+              <p class="greeting">Hello, I'm</p>
+              <h1 class="name">Sreemai Annam</h1>
+              <p class="bio">
+                  A dedicated and passionate Bachelor of Technology student specializing in Computer Science 
+                  and Engineering at SR University. With a strong academic foundation and a deep interest 
+                  in machine learning, data science, and full-stack development, I am continuously exploring 
+                  innovative solutions to real-world problems.
+              </p>
+              <div class="cta-buttons">
+                  <button class="btn primary-btn" onclick="window.open('./assets/resume.pdf')">
+                      Download CV
+                  </button>
+                  <button class="btn secondary-btn" onclick="location.href='#contact'">
+                      Contact Info
+                  </button>
+              </div>
+              <div class="social-links">
+                  <a href="https://www.linkedin.com/in/sreemai-annam-96bb94293/" target="_blank" class="social-icon">
+                      <img src="./assets/linkedin.png" alt="LinkedIn">
+                  </a>
+                  <a href="https://github.com/Sreemai18" target="_blank" class="social-icon">
+                      <img src="./assets/github.png" alt="GitHub">
+                  <a href="https://www.credly.com/users/annam-sreemai" target="_blank" class="social-icon">
+                        <img src="./assets/credly.png" alt="credly">
+                  </a>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+   
+      <!-- Add this line in your head section -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  
+  
+  <!-- Technical Skills Section -->
+<section id="skills">
+  <p class="section__text__p1">Skills</p>
+  <h1 class="title">Technical skills</h1>
+  <div class="skills-grid">
+      <!-- C Programming -->
+      <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Programming" class="skill-icon">
+          <h3>C</h3>
+      </div>
+
+      <!-- Python -->
+      <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-icon">
+          <h3>Python</h3>
+      </div>
+
+      <!-- Java -->
+      <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-icon">
+          <h3>Java</h3>
+      </div>
+
+      <!-- HTML -->
+      <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">
+          <h3>HTML</h3>
+      </div>
+
+      <!-- CSS -->
+      <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-icon">
+          <h3>CSS</h3>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+          <h3>JavaScript</h3>
+      </div>
+
+      <!-- SQL -->
+      <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle SQL" class="skill-icon" alt="MySQL" class="skill-icon" alt="Oracle SQL" class="skill-icon" alt="SQL" class="skill-icon"" alt="SQL" class="skill-icon">
+          <h3>oracle</h3>
+      </div>
+
+      <!-- MongoDB -->
+      <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="skill-icon">
+          <h3>MongoDB</h3>
+      </div>
+  </div>
+</section>
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+      <div class="about-containers">
+          <!-- Project 1 -->
+          <div class="details-container color-container">
+              <div class="article-container">
+                  <img src="./assets/global food inflation.png" alt="Global Food Inflation Analysis" class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Global Food Inflation Analysis</h2>
+              <div class="project-description-container">
+                  <p class="project-description">
+                      Developed and implemented various machine learning models, including Logistic
+                      Regression, K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Random Forest, and XGBoost to
+                      predict and understand inflation patterns.
+
+                      Optimized model performance through hyperparameter tuning, achieving a high accuracy with
+                      an R² score of 0.964 using the Random Forest Regressor.
+                  </p>
+              </div>
+              <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/Sreemai18/Global-Food-Inflation'">
+                      Github
+                  </button>
+              </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="details-container color-container">
+              <div class="article-container">
+                  <img src="./assets/Fitness Tracker Application.png" alt="Fitness Tracker Application" class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Fitness Tracker Application</h2>
+              <div class="project-description-container">
+                  <p class="project-description">
+                      Launched core functionalities within the fitness tracking app, including progress monitoring tools; led to an
+                      impressive 70% increase in user interaction through engaging visuals paired with actionable insights tailored for
+                      individual goals. 
+
+                      Implemented core features, including BMI calculation, progress monitoring, and
+                      personalized recommendations, increasing user engagement by 70% through interactive visuals and
+                      actionable insights.
+
+                      Designed an intuitive GUI, improving usability by 60%, catering to diverse user needs with features like daily
+                      goal setting, exercise logging, and tailored diet plans.
+                  </p>
+              </div>
+              <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/Sreemai18/Fitness-Tracker'">
+                      Github
+                  </button>
+              </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="details-container color-container">
+              <div class="article-container">
+                  <img src="./assets/Headache Prediction Based on Lifestyle and Occupation.png" 
+                       alt="Headache Prediction" class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Headache Prediction Based on Lifestyle and Occupation</h2>
+              <div class="project-description-container">
+                  <p class="project-description">
+                      Designed a machine learning framework to predict headache risks using lifestyle factors such as sleep duration,
+                      stress levels, and occupation. Implemented machine learning algorithms, including RNN, KNN, SVM, GBM.
+                  </p>
+              </div>
+              <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/Sreemai18/Headache-Prediction'">
+                      Github
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <!-- Other sections will go here -->
+     <!-- Contact Section -->
+<section id="contact">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-container">
+      <!-- Email -->
+      <div class="contact-card">
+          <div class="contact-icon-box">
+              <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email</h3>
+          <p>annamsreemai@gmail.com</p>
+          <a href="mailto:annamsreemai@gmail.com" class="contact-link">Send a message</a>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="contact-card">
+          <div class="contact-icon-box">
+              <i class="fab fa-linkedin"></i>
+          </div>
+          <h3>LinkedIn</h3>
+          <p>Connect with me</p>
+          <a href="https://www.linkedin.com/in/sreemai-annam-96bb94293/" target="_blank" class="contact-link">View Profile</a>
+      </div>
+
+      <!-- GitHub -->
+      <div class="contact-card">
+          <div class="contact-icon-box">
+              <i class="fab fa-github"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p>Check my projects</p>
+          <a href="https://github.com/Sreemai18" target="_blank" class="contact-link">View Repositories</a>
+      </div>
+
+      <!-- Location -->
+      <div class="contact-card">
+          <div class="contact-icon-box">
+              <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Location</h3>
+          <p>Warangal, Telangana</p>
+      </div>
+  </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
